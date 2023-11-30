@@ -10,6 +10,7 @@ class Extraservices extends BaseController
     {
         //
     }
+    #función para mostrar los datos de la tabla de la base de datos extraidos del modelo de ExtraServicesModel
     public function ver()
     {
         $servicioExtraModel = model("ExtraServicesModel");
@@ -20,7 +21,7 @@ class Extraservices extends BaseController
             view('EncuentraTuCuarto/admin/vistas/serviciosExtras/ver', $data) .
             view('EncuentraTuCuarto/admin/common/footeradmin');
     }
-
+    #se realiza el agregar los datos del formulario de "Agregar Servicio Extra"
     public function agregar()
     {
         $data['title'] = "Agregar Servicio Extra";
@@ -55,7 +56,7 @@ class Extraservices extends BaseController
             }
         }
     }
-
+    #función que realiza la inserción de los datos una vez verificados los datos
     public function insertarServicioExtra()
     {
         $servicioExtraModel = model("ExtraServicesModel");
@@ -72,6 +73,8 @@ class Extraservices extends BaseController
         $servicioExtraModel->insert($data, false);
         return true;
     }
+    #mediante botones, estos realizan una función designada, en este caso se hace un registro del dato que nosotros queremos cambiar
+    #y se muestra en el formulario de "Actualizar"
     public function editar($id)
     {
         $servicioExtraModel = model("ExtraServicesModel");
@@ -82,47 +85,14 @@ class Extraservices extends BaseController
             view('EncuentraTuCuarto/admin/vistas/serviciosExtras/editar', $data) .
             view('EncuentraTuCuarto/admin/common/footeradmin');
     }
-
-    public function buscar()
-    {
-        $servicioExtraModel = model('ExtraServicesModel');
-        if ($this->request->getGet('name')) {
-            $name = $this->request->getGet('name');
-            $typese = $this->request->getGet('typese');
-            $owner = $this->request->getGet('owner');
-            $phone = $this->request->getGet('phone');
-            $street = $this->request->getGet('street');
-            $neighborhood = $this->request->getGet('neighborhood');
-            $hours = $this->request->getGet('hours');
-            $price = $this->request->getGet('price');
-            $data['serviciosExtras'] = $servicioExtraModel
-                ->like('name', $name)
-                ->like('typese', $typese)
-                ->like('owner', $owner)
-                ->like('phone', $phone)
-                ->like('street', $street)
-                ->like('neighborhood', $neighborhood)
-                ->like('hours', $hours)
-                ->like('price', $price)
-                ->findAll();
-        } else {
-            $name = "";
-            $data['serviciosExtras'] = $servicioExtraModel->findAll();
-        }
-
-        return
-            view('EncuentraTuCuarto/admin/common/headadmin') .
-            view('EncuentraTuCuarto/admin/vistas/serviciosExtras/buscar', $data) .
-            view('EncuentraTuCuarto/admin/common/footeradmin');
-    }
-
+    #función que sirve para editar un registro seleccionado desde la vista "ver"
     public function eliminar($id)
     {
         $servicioExtraModel = model('ExtraServicesModel');
         $servicioExtraModel->delete($id);
         return redirect('EncuentraTuCuarto/admin/vistas/serviciosExtras/ver');
     }
-
+    #realiza lo que es la actualización de los datos llenados en el formulario de "Actualizar"
     public function actualizar()
     {
         $servicioExtraModel = model('ExtraServicesModel');

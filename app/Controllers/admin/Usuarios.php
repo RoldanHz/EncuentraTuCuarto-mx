@@ -10,7 +10,7 @@ class Usuarios extends BaseController
     {
         //
     }
-
+    #función para mostrar los datos de la tabla de la base de datos extraidos del modelo de UserInfo
     public function ver()
     {
         $userModel = model("UserInfoModel");
@@ -21,7 +21,7 @@ class Usuarios extends BaseController
             view('EncuentraTuCuarto/admin/vistas/usuarios/ver', $data) .
             view('EncuentraTuCuarto/admin/common/footeradmin');
     }
-
+    #se realiza el agregar los datos del formulario de "Agregar "Información de Usuario
     public function agregar()
     {
         $data['users'] = "Agregar Usuario";
@@ -64,7 +64,7 @@ class Usuarios extends BaseController
             }
         }
     }
-
+    #función que realiza la inserción de los datos una vez verificados los datos
     public function insertarUsuario()
     {
         $userModel = model("UserInfoModel");
@@ -90,8 +90,8 @@ class Usuarios extends BaseController
         return true;
     }
 
-    // Continuación del código
-
+    #mediante botones, estos realizan una función designada, en este caso se hace un registro del dato que nosotros queremos cambiar
+    #y se muestra en el formulario de "Actualizar"
     public function editar($id)
     {
         $userModel = model("UserInfoModel");
@@ -102,39 +102,14 @@ class Usuarios extends BaseController
             view('EncuentraTuCuarto/admin/vistas/usuarios/editar', $data) .
             view('EncuentraTuCuarto/admin/common/footeradmin');
     }
-
-    public function buscar()
-    {
-        $userModel = model('UserInfoModel');
-        if ($this->request->getGet('name')) {
-            $name = $this->request->getGet('name');
-            $lastname = $this->request->getGet('lastname');
-            $gender = $this->request->getGet('gender');
-            $email = $this->request->getGet('email');
-            $data['users'] = $userModel
-                ->like('name', $name)
-                ->like('lastname', $lastname)
-                ->LIKE('gender', $gender)
-                ->like('email', $email)
-                ->findAll();
-        } else {
-            $name = "";
-            $data['users'] = $userModel->findAll();
-        }
-
-        return
-            view('EncuentraTuCuarto/admin/common/headadmin') .
-            view('EncuentraTuCuarto/admin/vistas/usuarios/buscar', $data) .
-            view('EncuentraTuCuarto/admin/common/footeradmin');
-    }
-
+    #función que sirve para editar un registro seleccionado desde la vista "ver"
     public function eliminar($id)
     {
         $userModel = model('UserInfoModel');
         $userModel->delete($id);
         return redirect('EncuentraTuCuartoo/admin/vistas/usuarios/ver');
     }
-
+    #realiza lo que es la actualización de los datos llenados en el formulario de "Actualizar"
     public function actualizar()
     {
         $userModel = model('UserInfoModel');

@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 
 class Unidades extends BaseController
 {
+    #función para mostrar los datos de la tabla de la base de datos extraidos del modelo de Unidades
     public function ver()
     {
 
@@ -17,6 +18,7 @@ class Unidades extends BaseController
             view('EncuentraTuCuarto/admin/vistas/unidades/ver', $data) .
             view('EncuentraTuCuarto/admin/common/footeradmin');
     }
+    #se realiza el agregar los datos del formulario de "Agregar Unidad"
     public function agregar()
     {
         $unidades = model("UnidadesModel");
@@ -50,7 +52,7 @@ class Unidades extends BaseController
             }
         }
     }
-
+    #función que realiza la inserción de los datos una vez verificados los datos
     public function insertar()
     {
         $unidadModel = model("UnidadesModel");
@@ -66,9 +68,8 @@ class Unidades extends BaseController
         return true;
     }
 
-
-    // Continuación del código
-
+    #mediante botones, estos realizan una función designada, en este caso se hace un registro del dato que nosotros queremos cambiar
+    #y se muestra en el formulario de "Actualizar"
     public function editar($id)
     {
         $unidadModel = model("UnidadesModel");
@@ -80,42 +81,14 @@ class Unidades extends BaseController
             view('EncuentraTuCuarto/admin/common/footeradmin');
     }
 
-    public function buscar()
-    {
-        $unidadModel = model('UnidadesModel');
-        if ($this->request->getGet('street')) {
-            $street = $this->request->getGet('street');
-            $neighborhood = $this->request->getGet('neighborhood');
-            $extra_services = $this->request->getGet('extra_services');
-            $apartment = $this->request->getGet('apartment');
-            $floors = $this->request->getGet('floors');
-            $locality = $this->request->getGet('locality');
-            $data['unidades'] = $unidadModel
-                ->like('street', $street)
-                ->like('neighborhood', $neighborhood)
-                ->like('extra_services', $extra_services)
-                ->like('apartment', $apartment)
-                ->like('floors', $floors)
-                ->like('locality', $locality)
-                ->findAll();
-        } else {
-            $street = "";
-            $data['unidades'] = $unidadModel->findAll();
-        }
-
-        return
-            view('EncuentraTuCuarto/admin/common/headadmin') .
-            view('EncuentraTuCuarto/admin/vistas/unidades/buscar', $data) .
-            view('EncuentraTuCuarto/admin/common/footeradmin');
-    }
-
+    #función que sirve para editar un registro seleccionado desde la vista "ver"
     public function eliminar($id)
     {
         $unidadModel = model('UnidadesModel');
         $unidadModel->delete($id);
         return redirect('EncuentraTuCuarto/admin/vistas/unidades/ver');
     }
-
+    #realiza lo que es la actualización de los datos llenados en el formulario de "Actualizar"
     public function actualizar()
     {
         $unidadModel = model('UnidadesModel');

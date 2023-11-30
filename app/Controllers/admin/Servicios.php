@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 
 class Servicios extends BaseController
 {
+    #función para mostrar los datos de la tabla de la base de datos extraidos del modelo de Servicios
     public function ver()
     {
 
@@ -16,6 +17,7 @@ class Servicios extends BaseController
             view('EncuentraTuCuarto/admin/vistas/servicios/ver', $data) .
             view('EncuentraTuCuarto/admin/common/footeradmin');
     }
+    #se realiza el agregar los datos del formulario de "Agregar Servicio (diferente a servicio extra)"
     public function agregar()
     {
         $data['title'] = "Agregar Servicio";
@@ -44,7 +46,7 @@ class Servicios extends BaseController
             }
         }
     }
-
+    #función que realiza la inserción de los datos una vez verificados los datos
     public function insertarServicio()
     {
         $servicioModel = model("ServiciosModel");
@@ -55,6 +57,8 @@ class Servicios extends BaseController
         $servicioModel->insert($data, false);
         return true;
     }
+    #mediante botones, estos realizan una función designada, en este caso se hace un registro del dato que nosotros queremos cambiar
+    #y se muestra en el formulario de "Actualizar"
     public function editar($id)
     {
         $servicioModel = model("ServiciosModel");
@@ -65,35 +69,14 @@ class Servicios extends BaseController
             view('EncuentraTuCuarto/admin/vistas/servicios/editar', $data) .
             view('EncuentraTuCuarto/admin/common/footeradmin');
     }
-
-    public function buscar()
-    {
-        $servicioModel = model('ServiciosModel');
-        if ($this->request->getGet('category')) {
-            $category = $this->request->getGet('category');
-            $description = $this->request->getGet('description');
-            $data['servicios'] = $servicioModel
-                ->like('category', $category)
-                ->like('description', $description)
-                ->findAll();
-        } else {
-            $category = "";
-            $data['servicios'] = $servicioModel->findAll();
-        }
-
-        return
-            view('EncuentraTuCuarto/admin/common/headadmin') .
-            view('EncuentraTuCuarto/admin/vistas/servicios/buscar', $data) .
-            view('EncuentraTuCuarto/admin/common/footeradmin');
-    }
-
+    #función que sirve para editar un registro seleccionado desde la vista "ver"
     public function eliminar($id)
     {
         $servicioModel = model('ServiciosModel');
         $servicioModel->delete($id);
         return redirect('EncuentraTuCuarto/admin/vistas/servicios/ver');
     }
-
+    #realiza lo que es la actualización de los datos llenados en el formulario de "Actualizar"
     public function actualizar()
     {
         $servicioModel = model('ServiciosModel');
