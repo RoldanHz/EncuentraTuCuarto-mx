@@ -1,0 +1,127 @@
+CRITICAL - 2023-11-10 18:56:10 --> Invalid file: "EncuentraTuCuarto/admin/vistas/areas/v.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('EncuentraTuCuarto/admin/vistas/areas/v.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('EncuentraTuCuarto/admin/vistas/areas/v', [], true)
+ 3 APPPATH\Controllers\admin\Areas.php(13): view('EncuentraTuCuarto/admin/vistas/areas/v')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Areas->ver()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Areas))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-11-10 18:58:32 --> Invalid file: "EncuentraTuCuarto/admin/vistas/areas/v.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('EncuentraTuCuarto/admin/vistas/areas/v.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('EncuentraTuCuarto/admin/vistas/areas/v', [], true)
+ 3 APPPATH\Controllers\admin\Areas.php(13): view('EncuentraTuCuarto/admin/vistas/areas/v')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Areas->ver()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Areas))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-11-10 19:36:30 --> Call to a member function findAll() on null
+in APPPATH\Controllers\admin\Areas.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Areas->ver()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Areas))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-11-10 19:37:04 --> Call to a member function findAll() on null
+in APPPATH\Controllers\admin\Areas.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Areas->ver()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Areas))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-11-10 19:37:33 --> Undefined variable $careas
+in APPPATH\Views\EncuentraTuCuarto\admin\vistas\areas\ver.php on line 15.
+ 1 APPPATH\Views\EncuentraTuCuarto\admin\vistas\areas\ver.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $careas', 'C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\app\\Views\\EncuentraTuCuarto\\admin\\vistas\\areas\\ver.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\app\\Views\\EncuentraTuCuarto\\admin\\vistas\\areas\\ver.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('EncuentraTuCuarto/admin/vistas/areas/ver', [], true)
+ 5 APPPATH\Controllers\admin\Areas.php(16): view('EncuentraTuCuarto/admin/vistas/areas/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Areas->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Areas))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-11-10 19:37:45 --> Undefined property: stdClass::$street
+in APPPATH\Views\EncuentraTuCuarto\admin\vistas\areas\ver.php on line 17.
+ 1 APPPATH\Views\EncuentraTuCuarto\admin\vistas\areas\ver.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$street', 'C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\app\\Views\\EncuentraTuCuarto\\admin\\vistas\\areas\\ver.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\app\\Views\\EncuentraTuCuarto\\admin\\vistas\\areas\\ver.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('EncuentraTuCuarto/admin/vistas/areas/ver', [], true)
+ 5 APPPATH\Controllers\admin\Areas.php(16): view('EncuentraTuCuarto/admin/vistas/areas/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Areas->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Areas))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-11-10 19:39:11 --> Undefined property: stdClass::$street
+in APPPATH\Views\EncuentraTuCuarto\admin\vistas\areas\ver.php on line 17.
+ 1 APPPATH\Views\EncuentraTuCuarto\admin\vistas\areas\ver.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$street', 'C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\app\\Views\\EncuentraTuCuarto\\admin\\vistas\\areas\\ver.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\app\\Views\\EncuentraTuCuarto\\admin\\vistas\\areas\\ver.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('EncuentraTuCuarto/admin/vistas/areas/ver', [], true)
+ 5 APPPATH\Controllers\admin\Areas.php(16): view('EncuentraTuCuarto/admin/vistas/areas/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Areas->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Areas))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-11-10 19:40:13 --> Call to a member function findAll() on null
+in APPPATH\Controllers\admin\Areas.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Areas->ver()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Areas))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-11-10 19:40:25 --> Call to a member function findAll() on null
+in APPPATH\Controllers\admin\Areas.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Areas->ver()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Areas))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-11-10 19:45:37 --> Undefined property: stdClass::$floor
+in APPPATH\Views\EncuentraTuCuarto\admin\vistas\unidades\ver.php on line 22.
+ 1 APPPATH\Views\EncuentraTuCuarto\admin\vistas\unidades\ver.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$floor', 'C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\app\\Views\\EncuentraTuCuarto\\admin\\vistas\\unidades\\ver.php', 22)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\app\\Views\\EncuentraTuCuarto\\admin\\vistas\\unidades\\ver.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('EncuentraTuCuarto/admin/vistas/unidades/ver', [], true)
+ 5 APPPATH\Controllers\admin\Unidades.php(17): view('EncuentraTuCuarto/admin/vistas/unidades/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Unidades->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-11-10 19:46:30 --> Undefined property: stdClass::$floor
+in APPPATH\Views\EncuentraTuCuarto\admin\vistas\unidades\ver.php on line 22.
+ 1 APPPATH\Views\EncuentraTuCuarto\admin\vistas\unidades\ver.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$floor', 'C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\app\\Views\\EncuentraTuCuarto\\admin\\vistas\\unidades\\ver.php', 22)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\app\\Views\\EncuentraTuCuarto\\admin\\vistas\\unidades\\ver.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('EncuentraTuCuarto/admin/vistas/unidades/ver', [], true)
+ 5 APPPATH\Controllers\admin\Unidades.php(17): view('EncuentraTuCuarto/admin/vistas/unidades/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Unidades->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-11-10 19:46:37 --> Undefined property: stdClass::$floor
+in APPPATH\Views\EncuentraTuCuarto\admin\vistas\unidades\ver.php on line 22.
+ 1 APPPATH\Views\EncuentraTuCuarto\admin\vistas\unidades\ver.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$floor', 'C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\app\\Views\\EncuentraTuCuarto\\admin\\vistas\\unidades\\ver.php', 22)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\app\\Views\\EncuentraTuCuarto\\admin\\vistas\\unidades\\ver.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('EncuentraTuCuarto/admin/vistas/unidades/ver', [], true)
+ 5 APPPATH\Controllers\admin\Unidades.php(17): view('EncuentraTuCuarto/admin/vistas/unidades/ver', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Unidades->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-11-10 19:54:05 --> Call to a member function findAll() on null
+in APPPATH\Controllers\admin\Departamentos.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\admin\Departamentos->ver()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Departamentos))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')

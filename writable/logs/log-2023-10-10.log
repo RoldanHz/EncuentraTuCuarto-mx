@@ -1,0 +1,40 @@
+CRITICAL - 2023-10-10 06:06:45 --> Invalid file: "full/admin/common/head.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('full/admin/common/head.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('full/admin/common/head', [], true)
+ 3 APPPATH\Controllers\Admin.php(10): view('full/admin/common/head')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->inicio()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-10-10 06:07:21 --> Invalid file: "full/admin/common/menuadmin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('full/admin/common/menuadmin.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('full/admin/common/menuadmin', [], true)
+ 3 APPPATH\Controllers\Admin.php(11): view('full/admin/common/menuadmin')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->inicio()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-10-10 06:25:48 --> Invalid file: "full/login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('full/login.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('full/login', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('full/login')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')
+CRITICAL - 2023-10-10 15:57:57 --> Invalid file: "EncuentraTuCuartocommon/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('EncuentraTuCuartocommon/footer.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('EncuentraTuCuartocommon/footer', [], true)
+ 3 APPPATH\Controllers\Home.php(12): view('EncuentraTuCuartocommon/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\EncuentraTuCuarto.mx\\public\\index.php')

@@ -1,0 +1,1 @@
+<h1>este es añadir de admin en area</h1>
