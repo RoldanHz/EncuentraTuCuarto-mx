@@ -2,7 +2,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <h2 class="text-center mb-4">Actualizar Departamento</h2>
-            <form action="<?= base_url('EncuentraTuCuarto/admin/vistas/departamentos/actualizar'); ?>" method="post">
+            <form action="<?= base_url('editdepartamento/'); ?>" method="post">
             <input type="hidden" name="id" value="<?= $departamentos->id?>"/>
                 <div class="mb-3">
                     <label for="rooms" class="form-label">Cuartos</label>

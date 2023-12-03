@@ -2,7 +2,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <h2 class="text-center mb-4">Actualizar Servicio Extra</h2>
-            <form action="<?= base_url('EncuentraTuCuarto/admin/vistas/serviciosExtras/agregar'); ?>" method="post">
+            <form action="<?= base_url('editextraservicio/'); ?>" method="post">
             <input type="hidden" name="id" value="<?= $servicioExtra->id?>"/>
                 <div class="mb-3">
                     <label for="name" class="form-label">Nombre</label>
